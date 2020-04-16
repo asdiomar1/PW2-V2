@@ -5,62 +5,16 @@
 	linea 70 y 95. Cambiar imagen para que tenga solo la flecha
  =============================================================== -->
 
-	<!-- Banner destacados-->
+	<!-- Baner destacados-->
 	<section class="banner-area">
-		<div class="container">
-			<div class="row fullscreen align-items-center justify-content-start">
-				<div class="col-lg-12">
-					<div class="active-banner-slider owl-carousel">
-						<!-- single-slide -->
-						<div class="row single-slide align-items-center d-flex">
-							<div class="col-lg-5 col-md-6">
-								<div class="banner-content">
-									<h1>Últimos <br>Nike!</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">añadir al carro</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-7">
-								<div class="banner-img">
-									<img class="img-fluid" src="img/banner/banner-img.png" alt="">
-								</div>
-							</div>
-						</div>
-						<!-- single-slide -->
-						<div class="row single-slide">
-							<div class="col-lg-5">
-								<div class="banner-content">
-									<h1>Aqui otro <br>producto</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">Añadir al carro</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-7">
-								<div class="banner-img">
-									<img class="img-fluid" src="img/banner/banner-img.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php include 'inc/layout/products/outstanding/outstanding_banner.php' ?>
 	</section>
-	<!-- End banner Area -->
+	<!-- Fin baner destacados -->
 
-	<!-- start features Area -->
+	<!-- Inicio area de caracteristicas -->
 	<section class="features-area section_gap">
 		<div class="container">
 			<div class="row features-inner">
-				<!-- single features -->
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-features">
 						<div class="f-icon">
@@ -70,17 +24,15 @@
 						<p>Para todos los productos</p>
 					</div>
 				</div>
-				<!-- single features -->
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-features">
 						<div class="f-icon">
 							<img src="img/features/f-icon2.png" alt="">
 						</div>
 						<h6>Políticas de devolución</h6>
-						<p>Más información en la <br>sección de ayuda</p>
+						<p>Ver sección de ayuda</p>
 					</div>
 				</div>
-				<!-- single features -->
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-features">
 						<div class="f-icon">
@@ -90,22 +42,21 @@
 						<p>Las 24 hs del día!</p>
 					</div>
 				</div>
-				<!-- single features -->
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-features">
 						<div class="f-icon">
 							<img src="img/features/f-icon4.png" alt="">
 						</div>
 						<h6>Pagos seguros</h6>
-						<p>Garantizamos la seguridad en tus pagos</p>
+						<p>Seguridad garantizada</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end features Area -->
+	<!-- fin area de caracteristicas -->
 
-	<!-- Start category Area -->
+	<!-- inicio area de categorias -->
 	<section class="category-area">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -171,7 +122,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- End category Area -->
+	<!-- fin area de categorias -->
 
 	<!-- Inicio productos destacados y por venir -->
 	<section class="owl-carousel active-product-area section_gap">
@@ -183,7 +134,7 @@
 	</section>
 	<!-- fin productos destacados y por venir -->
 
-	<!-- Start exclusive deal Area -->
+	<!-- incio deals -->
 	<section class="exclusive-deal-area">
 		<div class="container-fluid">
 			<div class="row justify-content-center align-items-center">
@@ -255,7 +206,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- End exclusive deal Area -->
+	<!-- fin deals -->
 
 	<!-- Inicio Marcas -->
 	<section class="brand-area section_gap">
@@ -263,11 +214,11 @@
 	</section>
 	<!-- Fin marcas -->
 
-	<!-- inicio promociones de la semana -->
+	<!-- Inicio promociones de la semana -->
 	<section class="related-product-area section_gap_bottom">
 		<?php include 'inc/layout/products/deals_of_week.php' ?>
 	</section>
-	<!-- fin promociones de la semana -->
+	<!-- Fin promociones de la semana -->
 
 <?php include 'inc/layout/footer.php' ?>
 
