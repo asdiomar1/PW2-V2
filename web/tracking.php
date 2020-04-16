@@ -7,8 +7,8 @@
                 <div class="col-first">
                     <h1>Order Tracking</h1>
                     <nav class="d-flex align-items-center">
-                        <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                        <a href="category.html">Fashon Category</a>
+                        <a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="category.php">Fashon Category</a>
                     </nav>
                 </div>
             </div>
@@ -39,3 +39,4 @@
     <!--================End Tracking Box Area =================-->
 
     <?php include 'inc/layout/footer.php' ?>
+    <script src="js/functions/pages.js"></script>

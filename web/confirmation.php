@@ -7,8 +7,8 @@
 				<div class="col-first">
 					<h1>Confirmation</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Confirmation</a>
+						<a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.php">Confirmation</a>
 					</nav>
 				</div>
 			</div>
@@ -142,3 +142,4 @@
 	<!--================End Order Details Area =================-->
 
 	<?php include 'inc/layout/footer.php' ?>
+	<script src="js/functions/shop.js"></script>

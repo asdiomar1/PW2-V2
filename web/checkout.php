@@ -7,8 +7,8 @@
                 <div class="col-first">
                     <h1>Checkout</h1>
                     <nav class="d-flex align-items-center">
-                        <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                        <a href="single-product.html">Checkout</a>
+                        <a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="single-product.php">Checkout</a>
                     </nav>
                 </div>
             </div>
@@ -168,3 +168,4 @@
     <!--================End Checkout Area =================-->
 
 <?php include 'inc/layout/footer.php' ?>
+<script src="js/functions/shop.js"></script>

@@ -7,8 +7,8 @@
 				<div class="col-first">
 					<h1>Contact Us</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Contact</a>
+						<a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="#">Contact</a>
 					</nav>
 				</div>
 			</div>
@@ -71,3 +71,10 @@
 	<!--================Contact Area =================-->
 
 <?php include 'inc/layout/footer.php' ?>
+
+<script>
+	$(document).ready(function () {
+		$('.nav li.active').removeClass('active');
+        $('.contact').addClass('active');
+    });
+</script>

@@ -7,8 +7,8 @@
 				<div class="col-first">
 					<h1>Element Page</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Element</a>
+						<a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.php">Element</a>
 					</nav>
 				</div>
 			</div>
@@ -618,3 +618,4 @@
 
 
 	<?php include 'inc/layout/footer.php' ?>
+	<script src="js/functions/pages.js"></script>

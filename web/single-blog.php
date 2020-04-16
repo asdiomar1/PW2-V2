@@ -8,8 +8,8 @@
                 <div class="col-first">
                     <h1>Blog Page</h1>
                     <nav class="d-flex align-items-center">
-                        <a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-                        <a href="category.html">Blog</a>
+                        <a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+                        <a href="category.php">Blog</a>
                     </nav>
                 </div>
             </div>
@@ -289,7 +289,7 @@
                             <div class="media post_item">
                                 <img src="img/blog/popular-post/post1.jpg" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html">
+                                    <a href="category.php">
                                         <h3>Space The Final Frontier</h3>
                                     </a>
                                     <p>02 Hours ago</p>
@@ -298,7 +298,7 @@
                             <div class="media post_item">
                                 <img src="img/blog/popular-post/post2.jpg" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html">
+                                    <a href="category.php">
                                         <h3>The Amazing Hubble</h3>
                                     </a>
                                     <p>02 Hours ago</p>
@@ -307,7 +307,7 @@
                             <div class="media post_item">
                                 <img src="img/blog/popular-post/post3.jpg" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html">
+                                    <a href="category.php">
                                         <h3>Astronomy Or Astrology</h3>
                                     </a>
                                     <p>03 Hours ago</p>
@@ -316,7 +316,7 @@
                             <div class="media post_item">
                                 <img src="img/blog/popular-post/post4.jpg" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html">
+                                    <a href="category.php">
                                         <h3>Asteroids telescope</h3>
                                     </a>
                                     <p>01 Hours ago</p>
@@ -420,3 +420,4 @@
     <!--================Blog Area =================-->
 
     <?php include 'inc/layout/footer.php' ?>
+    <script src="js/functions/blog.js"></script>

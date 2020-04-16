@@ -7,9 +7,9 @@
 				<div class="col-first">
 					<h1>Product Details Page</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
 						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-						<a href="single-product.html">product-details</a>
+						<a href="single-product.php">product-details</a>
 					</nav>
 				</div>
 			</div>
@@ -229,25 +229,25 @@
 						<div class="col-lg-6">
 							<div class="review_box">
 								<h4>Post a comment</h4>
-								<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+								<form class="row contact_form" action="contact_process.php" method="post" id="commentForm" novalidate="novalidate">
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Your Full name">
+											<input type="text" class="form-control" id="name_comment" name="name" placeholder="Your Full name">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+											<input type="email" class="form-control" id="email_comment" name="email" placeholder="Email Address">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="number" name="number" placeholder="Phone Number">
+											<input type="text" class="form-control" id="number_comment" name="number" placeholder="Phone Number">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+											<textarea class="form-control" name="message" id="message_comment" rows="1" placeholder="Message"></textarea>
 										</div>
 									</div>
 									<div class="col-md-12 text-right">
@@ -349,32 +349,32 @@
 								<h4>Add a Review</h4>
 								<p>Your Rating:</p>
 								<ul class="list">
-									<li><a href="#"><i class="fa fa-star"></i></a></li>
-									<li><a href="#"><i class="fa fa-star"></i></a></li>
-									<li><a href="#"><i class="fa fa-star"></i></a></li>
-									<li><a href="#"><i class="fa fa-star"></i></a></li>
-									<li><a href="#"><i class="fa fa-star"></i></a></li>
+									<li><a href="#"><i class="far fa-star"></i></a></li>
+									<li><a href="#"><i class="far fa-star"></i></a></li>
+									<li><a href="#"><i class="far fa-star"></i></a></li>
+									<li><a href="#"><i class="far fa-star"></i></a></li>
+									<li><a href="#"><i class="far fa-star"></i></a></li>
 								</ul>
-								<p>Outstanding</p>
-								<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+								<p>Poor</p>
+								<form class="row contact_form" action="contact_process.php" method="post" id="reviewForm" novalidate="novalidate">
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Your Full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full name'">
+											<input type="text" class="form-control" id="name_review" name="name" placeholder="Your Full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full name'">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="email" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+											<input type="email" class="form-control" id="email_review" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="number" name="number" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
+											<input type="text" class="form-control" id="number_review" name="number" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<textarea class="form-control" name="message" id="message" rows="1" placeholder="Review" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Review'"></textarea></textarea>
+											<textarea class="form-control" name="message" id="message_review" rows="1" placeholder="Review" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Review'"></textarea></textarea>
 										</div>
 									</div>
 									<div class="col-md-12 text-right">
@@ -528,3 +528,4 @@
 	<!-- End related-product Area -->
 
 	<?php include 'inc/layout/footer.php' ?>
+	<script src="js/functions/shop.js"></script>

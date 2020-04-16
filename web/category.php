@@ -7,9 +7,9 @@
 				<div class="col-first">
 					<h1>Shop Category page</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
 						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Fashon Category</a>
+						<a href="category.php">Fashon Category</a>
 					</nav>
 				</div>
 			</div>
@@ -565,3 +565,4 @@
 	<!-- End related-product Area -->
 
 	<?php include 'inc/layout/footer.php' ?>
+	<script src="js/functions/shop.js"></script>

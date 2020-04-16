@@ -188,7 +188,7 @@
 		<div class="container-fluid">
 			<div class="row justify-content-center align-items-center">
 				<div class="col-lg-6 no-padding exclusive-left">
-					<div class="row clock_sec clockdiv" id="clockdiv">
+					<div class="row clock_sec clockdiv" id="clock">
 						<div class="col-lg-12">
 							<h1>Oferta especial exclusiva termina pronto!</h1>
 							<p>Quienes están extremadamente enamorados del sistema ecológico.</p>
@@ -270,3 +270,10 @@
 	<!-- fin promociones de la semana -->
 
 <?php include 'inc/layout/footer.php' ?>
+
+<script>
+	$(document).ready(function () {
+		$('.nav li.active').removeClass('active');
+        $('.home').addClass('active');
+    });
+</script>
