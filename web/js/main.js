@@ -35,10 +35,20 @@ $(document).ready(function(){
     $("#search").on("click", function () {
         $("#search_input_box").slideToggle();
         $("#search_input").focus();
+
+        clearResultContainer();
     });
     $("#close_search").on("click", function () {
         $('#search_input_box').slideUp(500);
+        clearResultContainer();
     });
+
+    function clearResultContainer() {
+      var resultContainer = document.getElementById("searchResult");
+        var textBox = document.getElementById("search_input");
+        resultContainer.innerHTML = "";
+        textBox.value = "";
+    }
 
     /*==========================
 		javaScript for sticky header

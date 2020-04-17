@@ -12,7 +12,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/linearicons.css">
-	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/themify-icons.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 
-	<script src="https://kit.fontawesome.com/8b23f17bfa.js" crossorigin="anonymous"></script>
+	<!-- <script src="https://kit.fontawesome.com/8b23f17bfa.js" crossorigin="anonymous"></script> -->
 
 </head>
 
@@ -84,10 +84,14 @@
 		<div class="search_input" id="search_input_box">
 			<div class="container">
 				<form class="d-flex justify-content-between">
-					<input type="text" class="form-control" id="search_input" placeholder="Search Here">
+					<input type="text" class="form-control" id="search_input" placeholder="Escribe nombre de producto o marca">
 					<button type="submit" class="btn"></button>
 					<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
 				</form>
+			</div>
+
+			<div id="searchResult">
+
 			</div>
 		</div>
 	</header>

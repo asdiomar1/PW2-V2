@@ -370,8 +370,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #f9f9ff;
   border-left: 2px solid #ffba00; }
 
-.progress-table-wrap {
-  overflow-x: scroll; }
+/* .progress-table-wrap {
+  overflow-x: scroll; } */
+
+  .mb-30 {
+    margin-bottom: 30px;
+  }
 
 .progress-table {
   background: #f9f9ff;

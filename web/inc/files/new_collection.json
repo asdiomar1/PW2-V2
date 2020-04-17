@@ -10,7 +10,8 @@
         "bannerImg": "banner-img.png",
         "detail1":"s-p1.jpg",
         "detail2":"s-p1.jpg",
-        "detail3":"s-p1.jpg"
+        "detail3":"s-p1.jpg",
+        "searchImg": "p1.jpg"
       },
       "specs": {
         "Ancho": "128mm",
@@ -32,7 +33,8 @@
         "bannerImg": "banner-img.png",
         "detail1":"s-p1.jpg",
         "detail2":"s-p1.jpg",
-        "detail3":"s-p1.jpg"
+        "detail3":"s-p1.jpg",
+        "searchImg": "p1.jpg"
       },
       "specs": {
         "Ancho": "128mm",
@@ -45,5 +47,31 @@
       "description": "Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves .Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15, where she went to secretarial school and then into an insurance office. After moving to London and then Hampton, she eventually married her next door neighbour from Reading, John Cook. He was an officer in the Merchant Navy and after he left the sea in 1956, they bought a pub for a year before John took a job in Southern Rhodesia with a motor company. Beryl bought their young son a box of watercolours, and when showing him how to use it, she decided that she herself quite enjoyed painting. John subsequently bought her a child’s painting set for her birthday and it was with this that she produced her first significant work",
       "titleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
       "detailDescription": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter."
+    },
+    {
+      "id": 3,
+      "brand": "Nike",
+      "nombre": "Adapt BB 222222",
+      "precio": "$149.99",
+      "category": "shoes",
+      "availibility": "Hay Stock",
+      "images": {
+        "bannerImg": "banner-img.png",
+        "detail1":"s-p1.jpg",
+        "detail2":"s-p1.jpg",
+        "detail3":"s-p1.jpg",
+        "searchImg": "p1.jpg"
+      },
+      "specs": {
+        "Ancho": "128mm",
+        "Alto": "508mm",
+        "Profundidad": "85mm",
+        "Peso": "52g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves .Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15, where she went to secretarial school and then into an insurance office. After moving to London and then Hampton, she eventually married her next door neighbour from Reading, John Cook. He was an officer in the Merchant Navy and after he left the sea in 1956, they bought a pub for a year before John took a job in Southern Rhodesia with a motor company. Beryl bought their young son a box of watercolours, and when showing him how to use it, she decided that she herself quite enjoyed painting. John subsequently bought her a child’s painting set for her birthday and it was with this that she produced her first significant work",
+      "titleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+      "detailDescription": "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter."  
     }
   ]
