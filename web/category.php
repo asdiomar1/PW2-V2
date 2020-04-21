@@ -5,11 +5,11 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Shop Category page</h1>
+					<h1>Página de Categorías </h1>
 					<nav class="d-flex align-items-center">
 						<a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Shop<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.php">Fashon Category</a>
+						<a href="#">Tienda<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.php">Categoría de Moda</a>
 					</nav>
 				</div>
 			</div>
@@ -20,7 +20,7 @@
 		<div class="row">
 			<div class="col-xl-3 col-lg-4 col-md-5">
 				<div class="sidebar-categories">
-					<div class="head">Browse Categories</div>
+					<div class="head">Examinar categorías</div>
 					<ul class="main-categories">
 						<li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable"><span
 								 class="lnr lnr-arrow-right"></span>Fruits and Vegetables<span class="number">(53)</span></a>
@@ -128,9 +128,9 @@
 					</ul>
 				</div>
 				<div class="sidebar-filter mt-50">
-					<div class="top-filter-head">Product Filters</div>
+					<div class="top-filter-head">Filtrar Productos</div>
 					<div class="common-filter">
-						<div class="head">Brands</div>
+						<div class="head">Marcas</div>
 						<form action="#">
 							<ul>
 								<li class="filter-list"><input class="pixel-radio" type="radio" id="apple" name="brand"><label for="apple">Apple<span>(29)</span></label></li>
@@ -156,14 +156,14 @@
 						</form>
 					</div>
 					<div class="common-filter">
-						<div class="head">Price</div>
+						<div class="head">Precio</div>
 						<div class="price-range-area">
 							<div id="price-range"></div>
 							<div class="value-wrapper d-flex">
-								<div class="price">Price:</div>
+								<div class="price">Precio:</div>
 								<span>$</span>
 								<div id="lower-value"></div>
-								<div class="to">to</div>
+								<div class="to">a</div>
 								<span>$</span>
 								<div id="upper-value"></div>
 							</div>
@@ -176,9 +176,9 @@
 				<div class="filter-bar d-flex flex-wrap align-items-center">
 					<div class="sorting">
 						<select>
-							<option value="1">Default sorting</option>
-							<option value="1">Default sorting</option>
-							<option value="1">Default sorting</option>
+							<option value="1">Clasificación por defecto</option>
+							<option value="1">Clasificación por defecto</option>
+							<option value="1">Clasificación por defecto</option>
 						</select>
 					</div>
 					<div class="sorting mr-auto">
