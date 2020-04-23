@@ -54,21 +54,6 @@
 									<li class="nav-item confirm"><a class="nav-link" href="confirmation.php">Confirmación</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown blog">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item fblog"><a class="nav-link" href="blog.php">Blog</a></li>
-									<li class="nav-item dblog"><a class="nav-link" href="single-blog.php">Detalles del blog</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown pages">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Páginas</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item login"><a class="nav-link" href="login.php">Login</a></li>
-									<li class="nav-item tracking"><a class="nav-link" href="tracking.php">Seguimiento</a></li>
-									<li class="nav-item elements"><a class="nav-link" href="elements.php">Elementos</a></li>
-								</ul>
-							</li>
 							<li class="nav-item contact"><a class="nav-link" href="contact.php">Contacto</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
@@ -90,6 +75,7 @@
 				</form>
 			</div>
 
+			<!-- En este div se muestran los resultados de busqueda -->
 			<div id="searchResult">
 
 			</div>

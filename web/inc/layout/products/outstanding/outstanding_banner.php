@@ -5,7 +5,7 @@
                 <?php
                     include 'inc/functions/read_file.php';
 
-                    $products = json_decode(getContentJson("new_collection.json"), true);
+                    $products = json_decode(getContentJson("products.json"), true);
 
                     foreach ($products as $key => $value) {
 

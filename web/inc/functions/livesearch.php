@@ -3,7 +3,7 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') { // Verifico que el método de solicitud sea POST
     if (!empty($_POST['searchText'])) {
         $searchText = strtolower(trim(htmlspecialchars($_POST['searchText'])));
-        $products = json_decode(getContentJson2("new_collection.json"), true);
+        $products = json_decode(getContentJson2("products.json"), true);
         $array = [];
 
         foreach ($products as $key => $value) {
