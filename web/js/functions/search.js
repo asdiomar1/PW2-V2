@@ -30,7 +30,6 @@ $("#search_input").keyup(
         url: "inc/functions/livesearch.php",
         data: { searchText: value },
         success: function (data) {
-          console.log(data);
 
           if (data != null && !data.includes("funciono", data)) {
             resultContainer.innerHTML = "";

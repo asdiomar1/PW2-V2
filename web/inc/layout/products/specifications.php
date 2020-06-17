@@ -1,7 +1,7 @@
 <?php
-    include 'inc/functions/read_file.php';
+    include 'inc/functions/utils.php';
     //Obtener ID por parametro y realizar busqueda en el JSON para filtrar el elemento correcto
-    $specifications = json_decode(getContentJson("products.json"), true);
+    $specifications = GetProducts();
 
     foreach($specifications as $specs) {
         if($specs['id'] == 1) { // Modificar para recibir este ID por parametro
@@ -16,4 +16,3 @@
             echo "<td><h5>" . $value . "</h5></td></tr>";
         }
     }
-?>

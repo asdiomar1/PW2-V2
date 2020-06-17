@@ -3,27 +3,37 @@
         <div class="col-lg-12">
             <div class="active-banner-slider owl-carousel">
                 <?php
-                    include 'inc/functions/read_file.php';
+                $products = GetProducts();
 
-                    $products = json_decode(getContentJson("products.json"), true);
+                foreach ($products as $key => $value) { ?>
 
-                    foreach ($products as $key => $value) {
-
-                        echo "<div class=\"row single-slide align-items-center d-flex\">";
-                        echo "<div class=\"col-lg-5 col-md-6\">";
-                        echo "<div class=\"banner-content\">";
-                        echo "<h1>" . $value["nombre"] . "</h1>";
-                        echo "<h3>Lo más reciente de <strong>" . $value["brand"] . "</strong>!</h3>";
-                        echo "<p>" . $value["titleDescription"] . "</p>";
-                        echo "<div class=\"add-bag d-flex align-items-center\">";
-                        echo "<a class=\"add-btn\" href=\"#\"><span class=\"lnr lnr-cross\"></span></a>";
-                        echo "<span class=\"add-text text-uppercase\">Ver más detalles</span></div></div></div>";
-                        echo "<div class=\"col-lg-7\"> <div class=\"banner-img\">";
-                        echo "<img class=\"img-fluid\" src=\"img/banner/" . $value["images"]["bannerImg"] . "\" alt=\"\">";
-                        echo "</div></div></div>";
-                    }
-                ?>
+                    <div class="row single-slide align-items-center d-flex">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="banner-content">
+                                <h1> <?php echo ($value["nombre"]); ?> </h1>
+                                <h3> Lo más reciente de <strong> <?php echo ($value["brand"]); ?></strong>!</h3>
+                                <p> <?php echo ($value["titleDescription"]); ?></p>
+                                <div class="add-bag d-flex align-items-center">
+                                    <a id="<?php echo($value['id']); ?>" class="add-btn" href="<?php echo ("single-product.php?product_id=" . $value['id']); ?>"><span class="lnr lnr-cross"></span></a>
+                                    <span class="add-text text-uppercase">Ver más detalles</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="banner-img">
+                                <img class="img-fluid" src="<?php echo ("img/banner/" . $value["images"]["bannerImg"]); ?>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+	$(".banner-content .add-bag").on("click", "a", function() {
+	   location.href = "single-product.php?product_id=" + this.id;
+	});
+</script>

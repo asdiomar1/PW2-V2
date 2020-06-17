@@ -66,7 +66,7 @@
 				<p class="footer-text m-0">
 					Copyright &copy;<script>
 						document.write(new Date().getFullYear());
-					</script> | Página creada por <a href="https://colorlib.com" target="_blank">Andres Sanchez / Luciano Labudia / Leonel Ochoa</a>
+					</script> | Página creada por <a href="#" style="pointer-events: none;">Andres Sanchez / Luciano Labudia / Leonel Ochoa</a>
 				</p>
 			</div>
 		</div>

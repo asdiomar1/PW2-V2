@@ -22,19 +22,19 @@
 			<div class="sidebar-categories">
 				<div class="head">Examinar categorías</div>
 				<ul class="main-categories">
-					<li class="main-nav-list">
+					<li id="listado_zapatos" class="main-nav-list">
 						<a data-toggle="collapse" href="#zapatos" aria-expanded="false" aria-controls="fruitsVegetable">
 							<?php
-							include 'inc/functions/read_file.php';
-							$products = json_decode(getContentJson("products.json"), true);
+								include 'inc/functions/utils.php';
+								$products = GetProducts();
 							?>
 							<span class="lnr lnr-arrow-right"></span>Zapatos<span class="number">(<?php echo count($products); ?>)</span></a>
 						<ul class="collapse" id="zapatos" data-toggle="collapse" aria-expanded="false" aria-controls="fruitsVegetable">
 							<?php
 							foreach ($products as $key => $value) {	 ?>
-								<li class="main-nav-list child">
-									<a href="#"><?php echo $value["nombre"] ?><span class="number"></span></a>
-								</li>
+									<li id="<?php echo $value["id"] ?>" class="main-nav-list child">
+										<a href="#"><?php echo $value["nombre"] ?><span class="number"></span></a>
+									</li>
 							<?php } ?>
 						</ul>
 					</li>
@@ -96,8 +96,6 @@
 				<div class="row">
 
 					<?php
-					include 'inc/functions/utils.php';
-
 					for ($i = 1; $i <= 6; $i++) { ?>
 
 						<div class="col-lg-4 col-md-6">
@@ -283,3 +281,8 @@
 
 <?php include 'inc/layout/footer.php' ?>
 <script src="js/functions/shop.js"></script>
+<script>
+	$("#listado_zapatos ul").on("click", "li", function() {
+	   location.href = "single-product.php?product_id=" + this.id;
+	});
+</script>
