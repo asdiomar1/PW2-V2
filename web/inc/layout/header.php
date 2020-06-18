@@ -48,9 +48,6 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tienda</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item category"><a class="nav-link" href="category.php">Categorias</a></li>
-									<li class="nav-item payments"><a class="nav-link" href="checkout.php">Pagos</a></li>
-									<li class="nav-item cart"><a class="nav-link" href="cart.php">Carro de compra</a></li>
-									<li class="nav-item confirm"><a class="nav-link" href="confirmation.php">Confirmación</a></li>
 								</ul>
 							</li>
 							<li class="nav-item contact"><a class="nav-link" href="contact.php">Contacto</a></li>

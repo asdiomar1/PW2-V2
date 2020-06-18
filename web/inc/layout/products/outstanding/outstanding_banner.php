@@ -4,8 +4,11 @@
             <div class="active-banner-slider owl-carousel">
                 <?php
                 $products = GetProducts();
+                $destacados = array_filter($products, function ($var) {
+                    return ($var['destacado'] == true);
+                });
 
-                foreach ($products as $key => $value) { ?>
+                foreach ($destacados as $key => $value) { ?>
 
                     <div class="row single-slide align-items-center d-flex">
                         <div class="col-lg-5 col-md-6">
@@ -31,9 +34,3 @@
         </div>
     </div>
 </div>
-
-<script>
-	$(".banner-content .add-bag").on("click", "a", function() {
-	   location.href = "single-product.php?product_id=" + this.id;
-	});
-</script>

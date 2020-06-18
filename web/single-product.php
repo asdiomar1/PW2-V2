@@ -19,8 +19,8 @@
 
 <?php
 	$id = $_GET['product_id'];
-	$products = json_decode(file_get_contents("C:\\xampp\\htdocs\\PW2-DaVinci\\web\\inc\\files\\" . "products.json"), true);
-	$all_comments = json_decode(file_get_contents("C:\\xampp\\htdocs\\PW2-DaVinci\\web\\inc\\files\\" . "comments.json"), true);
+	$products = json_decode(file_get_contents("C:\\xampp\\htdocs\\PW2-V2\\web\\inc\\files\\" . "products.json"), true);
+	$all_comments = json_decode(file_get_contents("C:\\xampp\\htdocs\\PW2-V2\\web\\inc\\files\\" . "comments.json"), true);
 
 	$product_comments = array_filter($all_comments, function ($item) use ($id) {
 		if (stripos($item['id_producto'], $id) !== false) {
@@ -49,13 +49,13 @@
 			<div class="col-lg-6">
 				<div class="s_Product_carousel">
 					<div class="single-prd-item">
-						<img class="img-fluid" src="<?php echo("img//category//" . $selected_product[0]['images']['detail1']); ?>" alt="">
+						<img class="img-fluid" src="<?php echo("img//product//" . $selected_product[0]['images']['detail1']); ?>" alt="">
 					</div>
 					<div class="single-prd-item">
-						<img class="img-fluid" src="<?php echo("img//category//" . $selected_product[0]['images']['detail2']); ?>" alt="">
+						<img class="img-fluid" src="<?php echo("img//product//" . $selected_product[0]['images']['detail2']); ?>" alt="">
 					</div>
 					<div class="single-prd-item">
-						<img class="img-fluid" src="<?php echo("img//category//" . $selected_product[0]['images']['detail3']); ?>" alt="">
+						<img class="img-fluid" src="<?php echo("img//product//" . $selected_product[0]['images']['detail3']); ?>" alt="">
 					</div>
 				</div>
 			</div>
@@ -166,7 +166,7 @@
 									</div>
 								</div>
 								<div class="col-md-12 text-right">
-									<button id="enviar_comentario" type="submit" value="submit" class="btn primary-btn">Submit Now</button>
+									<button id="enviar_comentario" type="submit" value="submit" class="btn primary-btn">Agregar</button>
 								</div>
 							</form>
 						</div>

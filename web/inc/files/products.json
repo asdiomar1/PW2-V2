@@ -4,15 +4,15 @@
       "destacado": true,
       "brand": "Nike",
       "nombre": "Adapt BB 2",
-      "precio": "$149.99",
+      "precio": "$360",
       "category": "Zapatos",
       "disponibilidad": "Hay Stock",
       "images": {
-        "bannerImg": "banner-img.png",
-        "detail1":"s-p1.jpg",
-        "detail2":"s-p1.jpg",
-        "detail3":"s-p1.jpg",
-        "searchImg": "p1.jpg"
+        "bannerImg": "adaptbb2.png",
+        "detail1":"s-p1.png",
+        "detail2":"s-p1.png",
+        "detail3":"s-p1.png",
+        "searchImg": "p1.png"
       },
       "specs": {
         "Ancho": "128mm",
@@ -22,10 +22,10 @@
         "Control de calidad": "Sí",
         "Cada caja contiene": "1 pieza"
       },
-      "description": "Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves .Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15, where she went to secretarial school and then into an insurance office. After moving to London and then Hampton, she eventually married her next door neighbour from Reading, John Cook. He was an officer in the Merchant Navy and after he left the sea in 1956, they bought a pub for a year before John took a job in Southern Rhodesia with a motor company. Beryl bought their young son a box of watercolours, and when showing him how to use it, she decided that she herself quite enjoyed painting. John subsequently bought her a child’s painting set for her birthday and it was with this that she produced her first significant work",
-      "titleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
-      "detailDescription": "AQUI VA UNA DESCRIPCION MEDIANAMENTE LARGA DEL ZAPATO Adapt BB 2" ,
-      "categoryDescription" : "Addidas New Hammer sole for Sports person"
+      "description": "En comparación a la primera versión, estos tenis se ven mejor acabados y con terminaciones más pensadas. A través de una aplicación puedes nivelar de manera exacta el nivel de presión de los cordones, como también hacerlo de manera manual con los botones laterales. Su batería promete durar más de un mes y se cargan de forma inalámbrica con un pad que viene incluido en la caja.",
+      "titleDescription": "Este futurista sneaker debutó en los pies de la promesa Ja Morant de los Memphis Grizzlies, que ha deslumbrado a los fanáticos en lo que va de temporada con sus espectaculares clavadas",
+      "detailDescription": "Su nueva versión de las zapatillas de basketball cuyos cordones (o agujetas) se atan solos, sí, como en Volver al Futuro" ,
+      "categoryDescription" : "Zapatos Adidas que se amarran solos"
     },
     {
       "id": 2,
@@ -36,10 +36,10 @@
       "category": "Zapatos",
       "disponibilidad": "Hay Stock",
       "images": {
-        "bannerImg": "banner-img.png",
-        "detail1":"s-p1.jpg",
-        "detail2":"s-p1.jpg",
-        "detail3":"s-p1.jpg",
+        "bannerImg": "yeezyboost.png",
+        "detail1":"s-p2.png",
+        "detail2":"s-p2.png",
+        "detail3":"s-p2.png",
         "searchImg": "p1.jpg"
       },
       "specs": {
@@ -50,37 +50,121 @@
         "Control de calidad": "Sí",
         "Cada caja contiene": "1 pieza"
       },
-      "description": "Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves .Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15, where she went to secretarial school and then into an insurance office. After moving to London and then Hampton, she eventually married her next door neighbour from Reading, John Cook. He was an officer in the Merchant Navy and after he left the sea in 1956, they bought a pub for a year before John took a job in Southern Rhodesia with a motor company. Beryl bought their young son a box of watercolours, and when showing him how to use it, she decided that she herself quite enjoyed painting. John subsequently bought her a child’s painting set for her birthday and it was with this that she produced her first significant work",
-      "titleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
-      "detailDescription": "AQUI VA UNA DESCRIPCION MEDIANAMENTE LARGA DEL ZAPATO Yeezy Boost 350 V2",
-      "categoryDescription": "Addidas New Hammer sole for Sports person"
+      "description": "Con un precio de salida en tienda de 200 dólares, no está tan mal, teniendo en cuenta que a) Kanye West quiere ser un diseñador de lujo; y b) el precio de reventa alcanza límites insospechados. Los materiales de las Yeezy son muy buenos, es una edición exclusiva y la tecnología (Boost) aplicada en el diseño y desarrollo del zapato es de las mejores según los críticos",
+      "titleDescription": "Las Yeezy tienen ciertas características que las han convertido en el zapato estrella: tienen la estructura de un mocasín para máximo comfort, tejido traspirable en la parte superior y ante en la parte interior, con suelas de goma para aumentar la flexibilidad y ligereza",
+      "detailDescription": "Son parte de una idea clara: el llamado 'ready-to-wear', un estilo urbano, con colores militares",
+      "categoryDescription": "zapatos adidas muy cómodos"
     },
     {
       "id": 3,
       "destacado": true,
       "brand": "Nike",
-      "nombre": "Adapt BB 222222",
-      "precio": "$149.99",
+      "nombre": "Air Max - Verdes",
+      "precio": "$268.99",
       "category": "Zapatos",
       "disponibilidad": "Hay Stock",
       "images": {
-        "bannerImg": "banner-img.png",
-        "detail1":"s-p1.jpg",
-        "detail2":"s-p1.jpg",
-        "detail3":"s-p1.jpg",
+        "bannerImg": "airmax_verdes.png",
+        "detail1":"product3.png",
+        "detail2":"product3.png",
+        "detail3":"product3.png",
         "searchImg": "p1.jpg"
       },
       "specs": {
-        "Ancho": "128mm",
-        "Alto": "508mm",
-        "Profundidad": "85mm",
-        "Peso": "52g",
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
         "Control de calidad": "Sí",
         "Cada caja contiene": "1 pieza"
       },
-      "description": "Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves .Born between the two world wars, Beryl Cook eventually left Kendrick School in Reading at the age of 15, where she went to secretarial school and then into an insurance office. After moving to London and then Hampton, she eventually married her next door neighbour from Reading, John Cook. He was an officer in the Merchant Navy and after he left the sea in 1956, they bought a pub for a year before John took a job in Southern Rhodesia with a motor company. Beryl bought their young son a box of watercolours, and when showing him how to use it, she decided that she herself quite enjoyed painting. John subsequently bought her a child’s painting set for her birthday and it was with this that she produced her first significant work",
-      "titleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
-      "detailDescription": "AQUI VA UNA DESCRIPCION MEDIANAMENTE LARGA DEL ZAPATO Adapt BB 222222",
-      "categoryDescription": "Addidas New Hammer sole for Sports person"
+      "description": "Rearmadas para reflejar su diseño original. Silueta auténtica con swoosh y logo original. No es una nueva versión, es un recordatorio. Con elementos que iniciaron una revolución.",
+      "titleDescription": "En 1987, las Nike Air Max 1 debutaron con una tecnología de aire visible en el talón, una sensación de amortiguación que no solo se sentía, sino que también podía verse. Desde entonces, el calzado Air Max de última generación se ha convertido en el favorito de los atletas y coleccionistas",
+      "detailDescription": "Una nueva generación de Nike Air Max 90 está volviendo. Con líneas impecables, versátiles y atemporales, se rearmaron para reflejar su diseño original. Además, se mantuvo la misma suela icónica, los revestimientos cosidos y los detalles clásicos de TPU que iniciaron la revolución. No es una nueva versión, es un recordatorio.",
+      "categoryDescription": "Producto Nike destacado"
+    },
+    {
+      "id": 4,
+      "destacado": false,
+      "brand": "Nike",
+      "nombre": "Air Max - Rosados",
+      "precio": "$268.99",
+      "category": "Zapatos",
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "airmax_rosados.png",
+        "detail1":"product4.png",
+        "detail2":"product4.png",
+        "detail3":"product4.png",
+        "searchImg": "p1.jpg"
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "Rearmadas para reflejar su diseño original. Silueta auténtica con swoosh y logo original. No es una nueva versión, es un recordatorio. Con elementos que iniciaron una revolución.",
+      "titleDescription": "En 1987, las Nike Air Max 1 debutaron con una tecnología de aire visible en el talón, una sensación de amortiguación que no solo se sentía, sino que también podía verse. Desde entonces, el calzado Air Max de última generación se ha convertido en el favorito de los atletas y coleccionistas",
+      "detailDescription": "Una nueva generación de Nike Air Max 90 está volviendo. Con líneas impecables, versátiles y atemporales, se rearmaron para reflejar su diseño original. Además, se mantuvo la misma suela icónica, los revestimientos cosidos y los detalles clásicos de TPU que iniciaron la revolución. No es una nueva versión, es un recordatorio.",
+      "categoryDescription": "Producto Nike destacado"
+    },
+    {
+      "id": 5,
+      "destacado": false,
+      "brand": "Adidas",
+      "nombre": "Energy Falcon - Rojos",
+      "precio": "$125.69",
+      "category": "Zapatos",
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "",
+        "detail1":"product5.png",
+        "detail2":"product5.png",
+        "detail3":"product5.png",
+        "searchImg": "p1.jpg"
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "Rearmadas para reflejar su diseño original. Silueta auténtica con swoosh y logo original. No es una nueva versión, es un recordatorio. Con elementos que iniciaron una revolución.",
+      "titleDescription": "Su mediasuela te aporta la amortiguación que necesitás para conseguir todos tus objetivos. El talón moldeado protege el tendón de Aquiles y acompaña el movimiento natural del pie, mientras que el refuerzo lateral ofrece mayor sujeción y un ajuste a medida. La suela de gran resistencia al desgaste te ayuda a acumular kilómetros en cada carrera",
+      "detailDescription": "Corré para alcanzar tus metas. Estas zapatillas de running presentan un diseño flexible de gran sujeción que proporciona mayor estabilidad y comodidad",
+      "categoryDescription": "Producto Adidas destacado"
+    },
+    {
+      "id": 6,
+      "destacado": false,
+      "brand": "Adidas",
+      "nombre": "Phosphere",
+      "precio": "$159.69",
+      "category": "Zapatos",
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "",
+        "detail1":"product6.png",
+        "detail2":"product6.png",
+        "detail3":"product6.png",
+        "searchImg": "p1.jpg"
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "El exterior de tejido circular sin costuras sujeta el pie y la mediasuela ultrasuave les brinda una máxima amortiguación a cada uno de tus pasos.",
+      "titleDescription": "La suela de caucho de color y las 3 Tiras en el costado atraen todas las miradas.",
+      "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
+      "categoryDescription": "Producto Adidas destacado"
     }
   ]

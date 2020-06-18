@@ -1,6 +1,7 @@
 <?php
 
-const URL_BASE = "C:\\xampp\\htdocs\\PW2-DaVinci\\web\\inc\\files\\";
+//const URL_BASE = "C:\\xampp\\htdocs\\PW2-V2\\web\\inc\\files\\";
+const URL_BASE = "C:\\xampp\\htdocs\\PW2-V2\\web\\inc\\files\\";
 
 function readFiles($fileName)
 {

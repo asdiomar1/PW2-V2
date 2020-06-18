@@ -126,31 +126,6 @@
 </section>
 <!-- fin area de categorias -->
 
-<!-- Inicio productos destacados y por venir -->
-<section class="owl-carousel active-product-area section_gap">
-	<!-- ULTIMOS PRODUCTOS -->
-
-	<div class="single-product-slider">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6 text-center">
-					<div class="section-title">
-						<h1>Últimos productos</h1>
-						<p>TEXTO DESCRIPTIVO PARA MOSTRAR ESTA SECCIÓN</p>
-					</div>
-				</div>
-			</div>
-			<div class="row"> 
-				<?php include_once 'inc/layout/products/latest_products.php' ?>
-			</div>
-		</div>
-	</div>
-
-	<!-- PRODUCTOS POR VENIR -->
-	<?php include_once 'inc/layout/products/coming_products.php' ?>
-</section>
-<!-- fin productos destacados y por venir -->
-
 <!-- incio deals -->
 <section class="exclusive-deal-area">
 	<div class="container-fluid">
@@ -231,19 +206,16 @@
 </section>
 <!-- Fin marcas -->
 
-<!-- Inicio promociones de la semana -->
-<section class="related-product-area section_gap_bottom">
-	<?php include 'inc/layout/products/deals_of_week.php';
-	?>
-</section>
-<!-- Fin promociones de la semana -->
-
 <?php include 'inc/layout/footer.php' ?>
 
 <script>
 	$(document).ready(function() {
 		$('.nav li.active').removeClass('active');
 		$('.home').addClass('active');
+	});
+
+	$(".banner-content .add-bag").on("click", "a", function() {
+	   location.href = "single-product.php?product_id=" + this.id;
 	});
 </script>
 

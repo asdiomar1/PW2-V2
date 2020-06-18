@@ -22,7 +22,7 @@
 			<div class="sidebar-categories">
 				<div class="head">Examinar categorías</div>
 				<ul class="main-categories">
-					<li id="listado_zapatos" class="main-nav-list">
+					<li class="main-nav-list">
 						<a data-toggle="collapse" href="#zapatos" aria-expanded="false" aria-controls="fruitsVegetable">
 							<?php
 								include 'inc/functions/utils.php';
@@ -32,61 +32,23 @@
 						<ul class="collapse" id="zapatos" data-toggle="collapse" aria-expanded="false" aria-controls="fruitsVegetable">
 							<?php
 							foreach ($products as $key => $value) {	 ?>
-									<li id="<?php echo $value["id"] ?>" class="main-nav-list child">
-										<a href="#"><?php echo $value["nombre"] ?><span class="number"></span></a>
-									</li>
+								<li id="<?php echo $value["id"] ?>" class="main-nav-list child">
+									<a href="<?php echo ("single-product.php?product_id=" . $value["id"]); ?>"><?php echo $value["nombre"] ?><span class="number"></span></a>
+								</li>
 							<?php } ?>
 						</ul>
 					</li>
 				</ul>
 			</div>
-			<div class="sidebar-filter mt-50">
-				<div class="top-filter-head">Filtrar Productos</div>
-				<div class="common-filter">
-					<div class="head">Marcas</div>
-					<form action="#">
-						<ul>
-							<?php
-							include 'inc/functions/sort_array.php';
-							$unique = unique_multidim_array($products, 'brand');
-							foreach ($unique as $key => $value) {
-								$brand = $value["brand"]; ?>
-
-								<li class="filter-list">
-									<input class="pixel-radio" type="radio" id="<?php echo $brand; ?>" name="brand">
-									<label for="<?php echo $brand; ?>"> <?php echo $brand; ?></label>
-								</li>
-							<?php } ?>
-						</ul>
-					</form>
-				</div>
-			</div>
 		</div>
 		<div class="col-xl-9 col-lg-8 col-md-7">
 			<!-- Start Filter Bar -->
-			<div class="filter-bar d-flex flex-wrap align-items-center">
+			<div class="filter-bar d-flex flex-wrap align-items-center" style="height: 60px;">
 				<div class="sorting">
-					<select>
-						<option value="1">Clasificación por defecto</option>
-						<option value="1">Clasificación por defecto</option>
-						<option value="1">Clasificación por defecto</option>
-					</select>
 				</div>
 				<div class="sorting mr-auto">
-					<select>
-						<option value="1">Show 12</option>
-						<option value="1">Show 12</option>
-						<option value="1">Show 12</option>
-					</select>
 				</div>
 				<div class="pagination">
-					<a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
-					<a href="#" class="active">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
-					<a href="#">6</a>
-					<a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<!-- End Filter Bar -->
@@ -96,20 +58,24 @@
 				<div class="row">
 
 					<?php
-					for ($i = 1; $i <= 6; $i++) { ?>
+					foreach ($products as $key => $value) { ?>
 
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
-								<img class="img-fluid" src="img/product/p<?php echo $i; ?>.jpg" alt="">
+								<a href="single-product.php?product_id=<?php echo($value['id']); ?>"><img class="img-fluid" src="img/product/<?php echo($value['images']['detail1']); ?>" alt=""></a>
 								<div class="product-details">
-									<h6>addidas New Hammer sole
-										for Sports person</h6>
+									<h6><?php echo($value['nombre']); ?></h6>
 									<div class="price">
-										<h6>$150.00</h6>
-										<h6 class="l-through">$210.00</h6>
+										<h6><?php echo($value['precio']);?></h6>
+										<h6 class="l-through">$<?php echo rand(400, 1000)?></h6>
 									</div>
 
-									<?php echo botones_interactivos(); ?>
+									<div class="prd-bottom">
+										<a href="single-product.php?product_id=<?php echo($value['id']); ?>" class="social-info">
+											<span class="ti-bag"></span>
+											<p class="hover-text">comprar</p>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -119,22 +85,12 @@
 			<!-- End Best Seller -->
 
 			<!-- Start Filter Bar -->
-			<div class="filter-bar d-flex flex-wrap align-items-center">
+			<div class="filter-bar d-flex flex-wrap align-items-center" style="height: 60px;">
+				<div class="sorting">
+				</div>
 				<div class="sorting mr-auto">
-					<select>
-						<option value="1">Show 12</option>
-						<option value="1">Show 12</option>
-						<option value="1">Show 12</option>
-					</select>
 				</div>
 				<div class="pagination">
-					<a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
-					<a href="#" class="active">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
-					<a href="#">6</a>
-					<a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<!-- End Filter Bar -->
@@ -148,9 +104,8 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-6 text-center">
 				<div class="section-title">
-					<h1>Deals of the Week</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua.</p>
+					<h1>Promociones de la semana</h1>
+					<p>Los mejores productos seleccionados y más vendidos de la semana</p>
 				</div>
 			</div>
 		</div>
@@ -161,10 +116,10 @@
 						<div class="single-related-product d-flex">
 							<a href="#"><img src="img/r1.jpg" alt=""></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Tacones Altos Negros</a>
 								<div class="price">
 									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6 class="l-through">$<?php echo rand(400, 1000)?></h6>
 								</div>
 							</div>
 						</div>
@@ -173,10 +128,10 @@
 						<div class="single-related-product d-flex">
 							<a href="#"><img src="img/r2.jpg" alt=""></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Remera de Hombre</a>
 								<div class="price">
 									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6 class="l-through">$<?php echo rand(200, 1000)?></h6>
 								</div>
 							</div>
 						</div>
@@ -185,10 +140,10 @@
 						<div class="single-related-product d-flex">
 							<a href="#"><img src="img/r3.jpg" alt=""></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Remera de Mujer Negra</a>
 								<div class="price">
 									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6 class="l-through"><?php echo rand(250, 1000)?></h6>
 								</div>
 							</div>
 						</div>
@@ -197,10 +152,10 @@
 						<div class="single-related-product d-flex">
 							<a href="#"><img src="img/r5.jpg" alt=""></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Remera de Mujer Turquesa</a>
 								<div class="price">
-									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6>$75.10</h6>
+									<h6 class="l-through">$<?php echo rand(190, 1000)?></h6>
 								</div>
 							</div>
 						</div>
@@ -209,10 +164,10 @@
 						<div class="single-related-product d-flex">
 							<a href="#"><img src="img/r6.jpg" alt=""></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Tacones Bajos Rojos</a>
 								<div class="price">
-									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6>$95.00</h6>
+									<h6 class="l-through">$<?php echo rand(195, 1000)?></h6>
 								</div>
 							</div>
 						</div>
@@ -221,10 +176,10 @@
 						<div class="single-related-product d-flex">
 							<a href="#"><img src="img/r7.jpg" alt=""></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Remera de Hombre Deportiva</a>
 								<div class="price">
-									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6>$130.00</h6>
+									<h6 class="l-through">$<?php echo rand(180, 1000)?></h6>
 								</div>
 							</div>
 						</div>
@@ -233,22 +188,22 @@
 						<div class="single-related-product d-flex">
 							<a href="#"><img src="img/r9.jpg" alt=""></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Buzo de Hombre Gris</a>
 								<div class="price">
-									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6>$176.00</h6>
+									<h6 class="l-through">$<?php echo rand(260, 1000)?></h6>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="img/r10.jpg" alt=""></a>
+							<a href="#"><img src="img/r10.jpg" alt="" ></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Vestido Negro</a>
 								<div class="price">
 									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6 class="l-through">$<?php echo rand(300, 1000)?></h6>
 								</div>
 							</div>
 						</div>
@@ -257,10 +212,10 @@
 						<div class="single-related-product d-flex">
 							<a href="#"><img src="img/r11.jpg" alt=""></a>
 							<div class="desc">
-								<a href="#" class="title">Black lace Heels</a>
+								<a href="#" class="title">Tacones Altos Amarillos</a>
 								<div class="price">
-									<h6>$189.00</h6>
-									<h6 class="l-through">$210.00</h6>
+									<h6>$110.00</h6>
+									<h6 class="l-through">$<?php echo rand(150, 1000)?></h6>
 								</div>
 							</div>
 						</div>
@@ -281,8 +236,3 @@
 
 <?php include 'inc/layout/footer.php' ?>
 <script src="js/functions/shop.js"></script>
-<script>
-	$("#listado_zapatos ul").on("click", "li", function() {
-	   location.href = "single-product.php?product_id=" + this.id;
-	});
-</script>
