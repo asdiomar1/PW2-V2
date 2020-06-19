@@ -5,9 +5,9 @@
 		<div class="container">
 			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
 				<div class="col-first">
-					<h1>Contactanos</h1>
+					<h1>Contáctanos</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.php">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="index.php">Inicio<span class="lnr lnr-arrow-right"></span></a>
 						<a href="#">Contacto</a>
 					</nav>
 				</div>
