@@ -1,4 +1,20 @@
-<?php include 'inc/layout/header.php' ?>
+<?php 
+	include 'inc/layout/header.php';
+	include 'inc/functions/utils.php';
+	
+	$products = GetProducts();
+	
+	if(isset($_GET['filter'])){
+		$filter_text = $_GET['filter'];
+		$temp_products = array_filter($products, function ($item) use ($filter_text) {
+			if (stripos($item['brand'], $filter_text) !== false || stripos($item['nombre'], $filter_text) !== false) {
+				return true;
+			}
+		});
+
+		$products = $temp_products;
+	}
+?>
 
 <!-- Start Banner Area -->
 <section class="banner-area organic-breadcrumb">
@@ -25,8 +41,8 @@
 					<li class="main-nav-list">
 						<a data-toggle="collapse" href="#zapatos" aria-expanded="false" aria-controls="fruitsVegetable">
 							<?php
-								include 'inc/functions/utils.php';
-								$products = GetProducts();
+								
+								
 							?>
 							<span class="lnr lnr-arrow-right"></span>Zapatos<span class="number">(<?php echo count($products); ?>)</span></a>
 						<ul class="collapse" id="zapatos" data-toggle="collapse" aria-expanded="false" aria-controls="fruitsVegetable">

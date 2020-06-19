@@ -6,8 +6,7 @@
 					<div class="single-footer-widget">
 						<h6>Acerca de</h6>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
-							magna aliqua.
+							Página creada con fines educativos para trabajo final de Programación Web 2 - Da Vinci
 						</p>
 					</div>
 				</div>

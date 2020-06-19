@@ -1,5 +1,11 @@
 [
     {
+        "id_producto": 1,
+        "fecha": "2020-06-19 21:13:24.000888",
+        "nombre": "Andres",
+        "comentario": "ULTIMO CREADO SALE DE PRIMERO"
+    },
+    {
         "id_producto": 3,
         "fecha": "2020-06-17 03:20:58.258071",
         "nombre": "num 2",
@@ -37,20 +43,20 @@
     },
     {
         "id_producto": 1,
-        "fecha": "29\/4\/2020 23:59:37",
+        "fecha": "29\/4\/2020 23:59:37.589745",
         "nombre": "Ejercicio num 1",
-        "comentario": "fdgdfg"
+        "comentario": "ESTE ES EL ULTIMO CREADO - DEBE SALIR PRIMERO"
     },
     {
         "id_producto": 1,
-        "fecha": "29\/4\/2020 23:58:27",
+        "fecha": "29\/4\/2020 23:58:27.697256",
         "nombre": "dfsdfsd",
-        "comentario": "fdgdfgdfgdfgdfgdfgdfgfdgdf"
+        "comentario": "ESTE ES EL SEGUNDO CREADO - DEBE SALIR PENULTIMO"
     },
     {
         "id_producto": 1,
-        "fecha": "29\/4\/2020 23:56:25",
+        "fecha": "29\/4\/2020 23:56:25.000478",
         "nombre": "dsfsdf",
-        "comentario": "342865dshfbgsdjhfver87tye48u7tydfgdfy"
+        "comentario": "ESTE ES EL PRIMER CREADO - DEBE SALIR ULTIMO"
     }
 ]

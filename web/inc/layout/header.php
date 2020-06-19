@@ -64,16 +64,11 @@
 		</div>
 		<div class="search_input" id="search_input_box">
 			<div class="container">
-				<form class="d-flex justify-content-between">
-					<input type="text" class="form-control" id="search_input" placeholder="Escribe nombre de producto o marca">
+				<form class="d-flex justify-content-between" method="get" action="category.php">
+					<input type="text" class="form-control" id="filter" name="filter" placeholder="Escribe nombre de producto o marca">
 					<button type="submit" class="btn"></button>
-					<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+					<span class="lnr lnr-cross" id="close_search" title="Cerrar cuadro de búsqueda"></span>
 				</form>
-			</div>
-
-			<!-- En este div se muestran los resultados de busqueda -->
-			<div id="searchResult">
-
 			</div>
 		</div>
 	</header>
