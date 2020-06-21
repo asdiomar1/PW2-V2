@@ -3,11 +3,11 @@ include_once 'utils.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    if (isset($name) && isset($message) && isset($id_producto)) {
-        $name = $_POST['name'];
-        $message = $_POST['message'];
-        $id_producto = $_POST['id_producto'];
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+    $id_producto = $_POST['id_producto'];
 
+    if (isset($name) && isset($message) && isset($id_producto)) {
         $comments = GetComments();
 
         $date = DateTime::createFromFormat('U.u', number_format(microtime(true), 6, '.', ''));
