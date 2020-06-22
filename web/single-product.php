@@ -162,9 +162,9 @@
 									<input type="hidden" class="form-control" id="id_producto" name="id_producto" value="<?php echo($id); ?>">
 								</div>
 
-								<div class="col-md-12" style="margin-bottom: 5px;">
+								<div class="col-md-12">
 									<div class="form-group">
-										<div class="row" style="margin-left: 0px;">
+										<div class="row">
 											<select id="puntaje" name="puntaje" class="form-control" >
 												<option value="1">1</option>
 												<option value="2">2</option>

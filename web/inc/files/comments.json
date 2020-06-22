@@ -1,16 +1,9 @@
 [
     {
         "id_producto": 2,
-        "fecha": "2020-06-22 02:46:43.357874",
+        "fecha": "2020-06-22 02:54:17.248129",
         "puntuacion": 3,
-        "nombre": "sdafsdfsdf",
-        "comentario": "sdfsdfsd"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-22 02:46:21.241940",
-        "puntuacion": "1",
-        "nombre": "sdfsdf",
+        "nombre": "dsfsdfsd",
         "comentario": "sdfsdfsdf"
     }
 ]
