@@ -166,5 +166,115 @@
       "titleDescription": "La suela de caucho de color y las 3 Tiras en el costado atraen todas las miradas.",
       "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
       "categoryDescription": "Producto Adidas destacado"
+    },
+    {
+      "id": 7,
+      "destacado": false,
+      "brand": "Adidas",
+      "nombre": "Air max",
+      "precio": "$200",
+      "category": "Zapatos",
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "",
+        "detail1":"p1.jpg",
+        "detail2":"p1.jpg",
+        "detail3":"p1.jpg"
+        
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "El exterior de tejido circular sin costuras sujeta el pie y la mediasuela ultrasuave les brinda una máxima amortiguación a cada uno de tus pasos.",
+      "titleDescription": "La suela de caucho de color y las 3 Tiras en el costado atraen todas las miradas.",
+      "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
+      "categoryDescription": "Producto Adidas destacado"
+    },
+    {
+      "id": 8,
+      "destacado": false,
+      "brand": "Adidas",
+      "nombre": "neopn",
+      "precio": "$159.69",
+      "category": "Zapatos",
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "",
+        "detail1":"p2.jpg",
+        "detail2":"p2.jpg",
+        "detail3":"p2.jpg"
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "El exterior de tejido circular sin costuras sujeta el pie y la mediasuela ultrasuave les brinda una máxima amortiguación a cada uno de tus pasos.",
+      "titleDescription": "La suela de caucho de color y las 3 Tiras en el costado atraen todas las miradas.",
+      "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
+      "categoryDescription": "Producto Adidas destacado"
+    },
+    {
+      "id": 9,
+      "destacado": false,
+      "brand": "Adidas",
+      "nombre": "sarasa",
+      "precio": "$159.69",
+      "category": "Zapatos",
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "",
+        "detail1":"p3.jpg",
+        "detail2":"p3.jpg",
+        "detail3":"p3.jpg"
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "El exterior de tejido circular sin costuras sujeta el pie y la mediasuela ultrasuave les brinda una máxima amortiguación a cada uno de tus pasos.",
+      "titleDescription": "La suela de caucho de color y las 3 Tiras en el costado atraen todas las miradas.",
+      "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
+      "categoryDescription": "Producto Adidas destacado"
+    },
+    {
+      "id": 10,
+      "destacado": false,
+      "brand": "Adidas",
+      "nombre": "laguna",
+      "precio": "$199.99",
+      "category": "Zapatos",
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "",
+        "detail1":"p4.jpg",
+        "detail2":"p4.jpg",
+        "detail3":"p4.jpg",
+        "searchImg": "p1.jpg"
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "El exterior de tejido circular sin costuras sujeta el pie y la mediasuela ultrasuave les brinda una máxima amortiguación a cada uno de tus pasos.",
+      "titleDescription": "La suela de caucho de color y las 3 Tiras en el costado atraen todas las miradas.",
+      "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
+      "categoryDescription": "Producto Adidas destacado"
     }
   ]

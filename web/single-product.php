@@ -163,7 +163,7 @@
 								</div>
 
 								<div class="col-md-12">
-									<div class="form-group">
+									<div class="form-group" style="margin-left: 14px;">
 										<div class="row">
 											<select id="puntaje" name="puntaje" class="form-control" >
 												<option value="1">1</option>
