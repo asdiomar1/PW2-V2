@@ -4,6 +4,7 @@ include_once 'utils.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $name = $_POST['name'];
+    $puntuacion = $_POST['puntaje'];
     $message = $_POST['message'];
     $id_producto = $_POST['id_producto'];
 
@@ -16,9 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $new_comment = array(
             "id_producto" => intval($id_producto),
             "fecha" => $formatted_date,
+            "puntuacion" => intval($puntuacion),
             "nombre" => $name,
             "comentario" => $message
         );
+
         array_unshift($comments, $new_comment);
         $json = json_encode($comments, JSON_PRETTY_PRINT);
 

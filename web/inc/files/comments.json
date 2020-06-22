@@ -1,68 +1,16 @@
 [
     {
-        "id_producto": 1,
-        "fecha": "2020-06-21 22:50:31.967195",
-        "nombre": "1",
-        "comentario": "1"
+        "id_producto": 2,
+        "fecha": "2020-06-22 02:46:43.357874",
+        "puntuacion": 3,
+        "nombre": "sdafsdfsdf",
+        "comentario": "sdfsdfsd"
     },
     {
         "id_producto": 2,
-        "fecha": "2020-06-21 22:49:20.366007",
-        "nombre": "11",
-        "comentario": "11"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:49:14.606014",
-        "nombre": "10",
-        "comentario": "10"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:49:07.614888",
-        "nombre": "9",
-        "comentario": "9"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:49:03.765793",
-        "nombre": "8",
-        "comentario": "8"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:49:00.245946",
-        "nombre": "7",
-        "comentario": "7"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:48:55.421756",
-        "nombre": "6",
-        "comentario": "6"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:48:51.085404",
-        "nombre": "5",
-        "comentario": "5"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:48:47.894542",
-        "nombre": "4",
-        "comentario": "4"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:48:44.575104",
-        "nombre": "3",
-        "comentario": "3"
-    },
-    {
-        "id_producto": 2,
-        "fecha": "2020-06-21 22:48:40.941452",
-        "nombre": "2",
-        "comentario": "2"
+        "fecha": "2020-06-22 02:46:21.241940",
+        "puntuacion": "1",
+        "nombre": "sdfsdf",
+        "comentario": "sdfsdfsdf"
     }
 ]

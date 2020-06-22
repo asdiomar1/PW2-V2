@@ -107,7 +107,6 @@
 							<?php 
 
 							foreach ($selected_product[0]["specs"] as $key => $value) {
-
 								if ($key != "id") {
 									echo "<tr><td><h5>" . $key . "</h5></td>";
 									echo "<td><h5>" . $value . "</h5></td></tr>";
@@ -138,6 +137,7 @@
 											<div class="media-body">
 												<h4><?php echo($valor['nombre']) ?></h4>
 												<h5><?php echo($valor['fecha']) ?></h5>
+												<h5>Puntuación: <?php echo($valor['puntuacion']) ?></h5>
 											</div>
 										</div>
 										<p><?php echo($valor['comentario']) ?></p>
@@ -161,6 +161,22 @@
 								<div class="form-group">
 									<input type="hidden" class="form-control" id="id_producto" name="id_producto" value="<?php echo($id); ?>">
 								</div>
+
+								<div class="col-md-12" style="margin-bottom: 5px;">
+									<div class="form-group">
+										<div class="row" style="margin-left: 0px;">
+											<select id="puntaje" name="puntaje" class="form-control" >
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+											<label for="puntaje" style="margin-left: 8px; margin-top: 10px; margin-right: 10px;">Puntuación</label>
+										</div>
+									</div>
+								</div>
+								
 								<div class="col-md-12">
 									<div class="form-group">
 										<textarea class="form-control" name="message" id="message_comment" rows="1" placeholder="Mensaje"></textarea>
