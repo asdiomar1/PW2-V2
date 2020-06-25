@@ -4,7 +4,11 @@
         "nombre": "Adidas"
     },
     {
-        "id":2,
+        "id": 2,
         "nombre":"Nike"
+    },
+    {
+        "id": 0,
+        "nombre":"Todas"
     }
 ]

@@ -30,8 +30,30 @@ function GetComments()
     return array_slice($all, 0, 10);
 }
 
+function GetCategories()
+{
+    return json_decode(getContentJson("category.json"), true);
+}
+
+function GetBrands()
+{
+    return json_decode(getContentJson("brands.json"), true);
+}
+
 function WriteCommentsTojsonFile($json)
 {
     $full_path = URL_BASE . "comments.json";
     file_put_contents($full_path, $json);
+}
+
+function filterByCategory($products, $idCategory) {
+    $temp_products = array_filter($products, function ($item) use ($idCategory) {
+        if ($item['category'] === $idCategory) { 
+            return true;
+        } else {
+            return false;
+        }
+    });
+
+    return $temp_products;
 }

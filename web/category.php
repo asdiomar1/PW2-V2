@@ -3,6 +3,8 @@
 	include 'inc/functions/utils.php';
 	
 	$products = GetProducts();
+	$categories = GetCategories();
+	$brands = GetBrands();
 	
 	if(isset($_GET['filter'])){
 		$filter_text = $_GET['filter'];
@@ -13,6 +15,36 @@
 		});
 
 		$products = $temp_products;
+	}
+
+	if(isset($_GET['cat'])){
+		$id_cat = $_GET['cat'];
+		if($id_cat == 0){
+			$products = GetProducts();
+		} else {
+			$temp_products = array_filter($products, function ($item) use ($id_cat) {
+				if (stripos($item['category'], $id_cat) !== false) {
+					return true;
+				}
+			});
+	
+			$products = $temp_products;
+		}
+	}
+
+	if(isset($_GET['brand'])){
+		$id_brand = $_GET['brand'];
+		if($id_brand == 0){
+			$products = GetProducts();
+		} else {
+			$temp_products = array_filter($products, function ($item) use ($id_brand) {
+				if (stripos($item['brand'], $id_brand) !== false) {
+					return true;
+				}
+			});
+	
+			$products = $temp_products;
+		}
 	}
 ?>
 
@@ -37,24 +69,27 @@
 		<div class="col-xl-3 col-lg-4 col-md-5">
 			<div class="sidebar-categories">
 				<div class="head">Examinar categorías</div>
-				<ul class="main-categories">
-					<li class="main-nav-list">
-						<a data-toggle="collapse" href="#zapatos" aria-expanded="false" aria-controls="fruitsVegetable">
-							<?php
-								
-								
-							?>
-							<span class="lnr lnr-arrow-right"></span>Zapatos<span class="number">(<?php echo count($products); ?>)</span></a>
-						<ul class="collapse" id="zapatos" data-toggle="collapse" aria-expanded="false" aria-controls="fruitsVegetable">
-							<?php
-							foreach ($products as $key => $value) {	 ?>
-								<li id="<?php echo $value["id"] ?>" class="main-nav-list child">
-									<a href="<?php echo ("single-product.php?product_id=" . $value["id"]); ?>"><?php echo $value["nombre"] ?><span class="number"></span></a>
-								</li>
-							<?php } ?>
-						</ul>
-					</li>
-				</ul>
+
+					<?php foreach($categories as $keyCategory => $valueCategory) { ?>
+					<ul class="main-categories">
+						<li class="main-nav-list">
+							<a href="category.php?cat=<?php echo($valueCategory['id']); ?>">
+								<span class="lnr lnr-arrow-right"></span><?php echo($valueCategory['nombre']) ?><span class="number"><?php //echo count($products); ?></span></a>
+						</li>
+					</ul>
+				<?php } ?>
+			</div>
+
+			<div class="sidebar-categories mt-50">
+				<div class="head" style="margin-top: 60px;">Examinar marcas</div>
+					<?php foreach($brands as $key => $value) { ?>
+					<ul class="main-categories">
+						<li class="main-nav-list">
+							<a href="category.php?brand=<?php echo($value['id']); ?>">
+								<span class="lnr lnr-arrow-right"></span><?php echo($value['nombre']) ?><span class="number"><?php //echo count($products); ?></span></a>
+						</li>
+					</ul>
+				<?php } ?>
 			</div>
 		</div>
 		<div class="col-xl-9 col-lg-8 col-md-7">

@@ -2,10 +2,10 @@
     {
       "id": 1,
       "destacado": true,
-      "brand": "Nike",
+      "brand": 2,
       "nombre": "Adapt BB 2",
       "precio": "$360",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "adaptbb2.png",
@@ -30,10 +30,10 @@
     {
       "id": 2,
       "destacado": true,
-      "brand": "Adidas",
+      "brand": 1,
       "nombre": "Yeezy Boost 350 V2",
       "precio": "$149.99",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "yeezyboost.png",
@@ -58,10 +58,10 @@
     {
       "id": 3,
       "destacado": true,
-      "brand": "Nike",
+      "brand": 2,
       "nombre": "Air Max - Verdes",
       "precio": "$268.99",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "airmax_verdes.png",
@@ -86,10 +86,10 @@
     {
       "id": 4,
       "destacado": false,
-      "brand": "Nike",
+      "brand": 2,
       "nombre": "Air Max - Rosados",
       "precio": "$268.99",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "airmax_rosados.png",
@@ -114,10 +114,10 @@
     {
       "id": 5,
       "destacado": false,
-      "brand": "Adidas",
+      "brand": 1,
       "nombre": "Energy Falcon - Rojos",
       "precio": "$125.69",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "",
@@ -142,10 +142,10 @@
     {
       "id": 6,
       "destacado": false,
-      "brand": "Adidas",
+      "brand": 1,
       "nombre": "Phosphere",
       "precio": "$159.69",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "",
@@ -170,10 +170,10 @@
     {
       "id": 7,
       "destacado": false,
-      "brand": "Adidas",
+      "brand": 1,
       "nombre": "Air max",
       "precio": "$200",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "",
@@ -198,10 +198,10 @@
     {
       "id": 8,
       "destacado": false,
-      "brand": "Adidas",
+      "brand": 1,
       "nombre": "neopn",
       "precio": "$159.69",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "",
@@ -225,10 +225,10 @@
     {
       "id": 9,
       "destacado": false,
-      "brand": "Adidas",
+      "brand": 1,
       "nombre": "sarasa",
       "precio": "$159.69",
-      "category": "Zapatos",
+      "category": 1,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "",
@@ -252,10 +252,66 @@
     {
       "id": 10,
       "destacado": false,
-      "brand": "Adidas",
+      "brand": 1,
       "nombre": "laguna",
       "precio": "$199.99",
-      "category": "Zapatos",
+      "category": 1,
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "",
+        "detail1":"p4.jpg",
+        "detail2":"p4.jpg",
+        "detail3":"p4.jpg",
+        "searchImg": "p1.jpg"
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "El exterior de tejido circular sin costuras sujeta el pie y la mediasuela ultrasuave les brinda una máxima amortiguación a cada uno de tus pasos.",
+      "titleDescription": "La suela de caucho de color y las 3 Tiras en el costado atraen todas las miradas.",
+      "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
+      "categoryDescription": "Producto Adidas destacado"
+    },
+    {
+      "id": 11,
+      "destacado": false,
+      "brand": 2,
+      "nombre": "CAMISAA",
+      "precio": "$199.99",
+      "category": 2,
+      "disponibilidad": "Hay Stock",
+      "images": {
+        "bannerImg": "",
+        "detail1":"p4.jpg",
+        "detail2":"p4.jpg",
+        "detail3":"p4.jpg",
+        "searchImg": "p1.jpg"
+      },
+      "specs": {
+        "Ancho": "120mm",
+        "Alto": "517mm",
+        "Profundidad": "80mm",
+        "Peso": "65g",
+        "Control de calidad": "Sí",
+        "Cada caja contiene": "1 pieza"
+      },
+      "description": "El exterior de tejido circular sin costuras sujeta el pie y la mediasuela ultrasuave les brinda una máxima amortiguación a cada uno de tus pasos.",
+      "titleDescription": "La suela de caucho de color y las 3 Tiras en el costado atraen todas las miradas.",
+      "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
+      "categoryDescription": "Producto Adidas destacado"
+    },
+    {
+      "id": 12,
+      "destacado": false,
+      "brand": 1,
+      "nombre": "PANTALON",
+      "precio": "$199.99",
+      "category": 3,
       "disponibilidad": "Hay Stock",
       "images": {
         "bannerImg": "",
