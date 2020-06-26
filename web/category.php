@@ -6,6 +6,8 @@
 	$categories = GetCategories();
 	$brands = GetBrands();
 	
+	
+	
 	if(isset($_GET['filter'])){
 		$filter_text = $_GET['filter'];
 		$temp_products = array_filter($products, function ($item) use ($filter_text) {
@@ -23,7 +25,7 @@
 			$products = GetProducts();
 		} else {
 			$temp_products = array_filter($products, function ($item) use ($id_cat) {
-				if (stripos($item['category'], $id_cat) !== false) {
+				if ($item['category'] == $id_cat) {
 					return true;
 				}
 			});
@@ -38,13 +40,26 @@
 			$products = GetProducts();
 		} else {
 			$temp_products = array_filter($products, function ($item) use ($id_brand) {
-				if (stripos($item['brand'], $id_brand) !== false) {
+				if ($item['brand'] == $id_brand) {
 					return true;
 				}
 			});
 	
 			$products = $temp_products;
 		}
+	}
+
+	if(!empty($_GET['brand']) && !empty($_GET['cat'])) {
+		$id_cat = $_GET['cat'];
+		$id_brand = $_GET['brand'];
+
+		$temp_products = array_filter($products, function ($item) use ($id_brand, $id_cat) {
+			if ($item['brand'] == $id_brand && $item['category'] == $id_cat) {
+				return true;
+			}
+		});
+
+		$products = $temp_products;
 	}
 ?>
 
@@ -55,9 +70,9 @@
 			<div class="col-first">
 				<h1>Categorías Karma</h1>
 				<nav class="d-flex align-items-center">
-					<a href="index.php">Inicio<span class="lnr lnr-arrow-right"></span></a>
-					<a href="#">Tienda<span class="lnr lnr-arrow-right"></span></a>
-					<a href="category.php">Categorías</a>
+					<a href="index.php" style="pointer-events: none;">Inicio<span class="lnr lnr-arrow-right"></span></a>
+					<a href="#" style="pointer-events: none;">Tienda<span class="lnr lnr-arrow-right"></span></a>
+					<a href="category.php" style="pointer-events: none;">Categorías</a>
 				</nav>
 			</div>
 		</div>
@@ -70,11 +85,11 @@
 			<div class="sidebar-categories">
 				<div class="head">Examinar categorías</div>
 
-					<?php foreach($categories as $keyCategory => $valueCategory) { ?>
+					<?php foreach($categories as $key => $cat) { ?>
 					<ul class="main-categories">
 						<li class="main-nav-list">
-							<a href="category.php?cat=<?php echo($valueCategory['id']); ?>">
-								<span class="lnr lnr-arrow-right"></span><?php echo($valueCategory['nombre']) ?><span class="number"><?php //echo count($products); ?></span></a>
+							<a href="category.php?cat=<?php echo $cat['id']?>&brand=<?php echo isset($_GET['brand'])?$_GET['brand']:''?>">
+								<span class="lnr lnr-arrow-right"></span><?php echo($cat['nombre']) ?><span class="number"><?php //echo count($products); ?></span></a>
 						</li>
 					</ul>
 				<?php } ?>
@@ -85,7 +100,7 @@
 					<?php foreach($brands as $key => $value) { ?>
 					<ul class="main-categories">
 						<li class="main-nav-list">
-							<a href="category.php?brand=<?php echo($value['id']); ?>">
+							<a href="category.php?brand=<?php echo($value['id'])?>&cat=<?php echo isset($_GET['cat'])?$_GET['cat']:'' ?>">
 								<span class="lnr lnr-arrow-right"></span><?php echo($value['nombre']) ?><span class="number"><?php //echo count($products); ?></span></a>
 						</li>
 					</ul>
@@ -110,7 +125,6 @@
 
 					<?php
 					foreach ($products as $key => $value) { ?>
-
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
 								<a href="single-product.php?product_id=<?php echo($value['id']); ?>"><img class="img-fluid" src="img/product/<?php echo($value['images']['detail1']); ?>" alt=""></a>
@@ -128,6 +142,14 @@
 										</a>
 									</div>
 								</div>
+							</div>
+						</div>
+					<?php } ?>
+
+					<?php if(sizeof($products) == 0) { ?>
+						<div class="col-lg-12 col-md-12">
+							<div class="single-product">
+								<h3 style="text-align: center;">No hay productos disponibles</h3>
 							</div>
 						</div>
 					<?php } ?>

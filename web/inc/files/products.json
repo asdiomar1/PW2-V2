@@ -305,9 +305,9 @@
       "detailDescription": "Buscá nuevas experiencias. Estas zapatillas tienen un look muy llamativo y ofrecen una total comodidad",
       "categoryDescription": "Producto Adidas destacado"
     },
-    {
+    { 
       "id": 12,
-      "destacado": false,
+      "destacado": true,
       "brand": 1,
       "nombre": "PANTALON",
       "precio": "$199.99",

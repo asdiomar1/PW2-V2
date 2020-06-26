@@ -57,3 +57,20 @@ function filterByCategory($products, $idCategory) {
 
     return $temp_products;
 }
+
+function remover ($valor, $arr)
+{
+    foreach($arr as $value) {
+        if($value['id'] == $valor) {
+            unset($value['id']);
+        }
+    }
+
+    return $arr;
+}
+
+function remove_element(&$array,$value) {
+    if(($key = array_search($value,$array)) !== false) {
+       unset($array[$key]);
+  }    
+}
