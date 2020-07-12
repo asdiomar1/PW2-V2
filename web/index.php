@@ -58,6 +58,77 @@
 </section>
 <!-- fin area de caracteristicas -->
 
+<!-- Productos Destacados -->
+
+
+<section class="features-area section_gap">
+			<div class="container">
+			
+			
+				
+				<div class="row justify-content-center">
+					<div class="col-lg-6 text-center">
+						<div class="section-title">
+						<h1>Productos Destacados</h1>
+						</div>
+					</div>
+				</div>	
+
+				<section class="lattest-product-area pb-40 category-list">
+					<div class="row"> 
+
+						<?php
+							include_once('destacados.php');
+								?>
+								<div class="single-new-arrival single-new-arrival-bh">
+									<!--<div class="single-new-arrival-bg"> este pone fondo blanco-->
+									<div class="row-fluid">
+									<ul class="thumbnail">
+											<?php
+												$fp = fopen('inc/files/products.json','r');
+												$pArray = json_decode(fread($fp,filesize('inc/files/products.json')),true);
+												fclose($fp);
+												foreach($pArray as $prod){ 
+													$flagPrint = true;
+													if(!empty($_GET['mejores'])  AND $flagPrint ){
+														if($_GET['mejores'] == $prod['mejores']){
+															$flagPrint = true;
+														}else{
+															$flagPrint = false;
+														}
+													}
+											
+													if($flagPrint){
+											?>
+									
+
+													
+									<a href="single-product.php?product_id=<?php echo $prod['id']?>"><img src="img/product/<?php echo $prod['imagenDes']?>" alt="new-arrivals images"></a>	
+											
+		
+
+									
+
+								<!--de aca saque el array de productos -->
+								<!--el php de abajo es para cerrar el foreach de arriba -->
+											<?php }
+										}?>
+											</ul>
+									<!--</div>-->
+						
+								</div>	
+						
+							</div>
+
+
+
+					</div>
+				</section>
+			</div>
+
+		</section>
+
+
 <!-- inicio area de categorias -->
 <section class="category-area">
 	<div class="container">

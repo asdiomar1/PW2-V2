@@ -2,11 +2,13 @@
     {
       "id": 1,
       "destacado": true,
+      "mejores": 1,
       "brand": 2,
       "nombre": "Adapt BB 2",
       "precio": "$360",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "s-p1.png",
       "images": {
         "bannerImg": "adaptbb2.png",
         "detail1":"s-p1.png",
@@ -30,11 +32,13 @@
     {
       "id": 2,
       "destacado": true,
+      "mejores": 1,
       "brand": 1,
       "nombre": "Yeezy Boost 350 V2",
       "precio": "$149.99",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "s-p2.png",
       "images": {
         "bannerImg": "yeezyboost.png",
         "detail1":"s-p2.png",
@@ -58,11 +62,13 @@
     {
       "id": 3,
       "destacado": true,
+      "mejores": 1,
       "brand": 2,
       "nombre": "Air Max - Verdes",
       "precio": "$268.99",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "product3.png",
       "images": {
         "bannerImg": "airmax_verdes.png",
         "detail1":"product3.png",
@@ -86,11 +92,13 @@
     {
       "id": 4,
       "destacado": false,
+      "mejores": 1,
       "brand": 2,
       "nombre": "Air Max - Rosados",
       "precio": "$268.99",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "product4.png",
       "images": {
         "bannerImg": "airmax_rosados.png",
         "detail1":"product4.png",
@@ -114,11 +122,13 @@
     {
       "id": 5,
       "destacado": false,
+      "mejores": 1,
       "brand": 1,
       "nombre": "Energy Falcon - Rojos",
       "precio": "$125.69",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "product5.png",
       "images": {
         "bannerImg": "",
         "detail1":"product5.png",
@@ -142,11 +152,13 @@
     {
       "id": 6,
       "destacado": false,
+      "mejores": 1,
       "brand": 1,
       "nombre": "Phosphere",
       "precio": "$159.69",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "product6.png",
       "images": {
         "bannerImg": "",
         "detail1":"product6.png",
@@ -170,11 +182,13 @@
     {
       "id": 7,
       "destacado": false,
+      "mejores": 1,
       "brand": 1,
       "nombre": "Air max",
       "precio": "$200",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "p1.jpg",
       "images": {
         "bannerImg": "",
         "detail1":"p1.jpg",
@@ -198,11 +212,13 @@
     {
       "id": 8,
       "destacado": false,
+      "mejores": 1,
       "brand": 1,
       "nombre": "neopn",
       "precio": "$159.69",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "p2.jpg",
       "images": {
         "bannerImg": "",
         "detail1":"p2.jpg",
@@ -225,11 +241,13 @@
     {
       "id": 9,
       "destacado": false,
+      "mejores": 1,
       "brand": 1,
       "nombre": "sarasa",
       "precio": "$159.69",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "p3.jpg",
       "images": {
         "bannerImg": "",
         "detail1":"p3.jpg",
@@ -252,11 +270,13 @@
     {
       "id": 10,
       "destacado": false,
+      "mejores": 1,
       "brand": 1,
       "nombre": "laguna",
       "precio": "$199.99",
       "category": 1,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "p4.jpg",
       "images": {
         "bannerImg": "",
         "detail1":"p4.jpg",
@@ -280,11 +300,13 @@
     {
       "id": 11,
       "destacado": false,
+      "mejores": 1,
       "brand": 2,
       "nombre": "CAMISAA",
       "precio": "$199.99",
       "category": 2,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "p4.jpg",
       "images": {
         "bannerImg": "",
         "detail1":"p4.jpg",
@@ -308,11 +330,13 @@
     { 
       "id": 12,
       "destacado": true,
+      "mejores": 1,
       "brand": 1,
       "nombre": "PANTALON",
       "precio": "$199.99",
       "category": 3,
       "disponibilidad": "Hay Stock",
+      "imagenDes": "p4.jpg",
       "images": {
         "bannerImg": "",
         "detail1":"p4.jpg",
